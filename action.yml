@@ -1,0 +1,19 @@
+name: 'Devolutions Server Login'
+description: 'Authenticate and get a token from Devolutions Server'
+inputs:
+  server_url:
+    description: 'URL of the Devolutions Server'
+    required: true
+  app_key:
+    description: 'Application key for authentication'
+    required: true
+  app_secret:
+    description: 'Application secret for authentication'
+    required: true
+  output_variable:
+    description: 'Name of the environment variable to store the retrieved token'
+    required: false
+    default: 'DVLS_TOKEN'
+runs:
+  using: 'node20'
+  main: 'index.js'
