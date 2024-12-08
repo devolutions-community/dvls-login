@@ -26,7 +26,7 @@ Before using this action, you need:
 ```yaml
 steps:
   - name: Login to Devolutions Server
-    uses: devolutions/dvls-login@v1
+    uses: devolutions-community/dvls-login@main
     with:
       server_url: 'https://your-server.devolutions.app'
       app_key: ${{ secrets.DVLS_APP_KEY }}
