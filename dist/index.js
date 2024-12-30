@@ -34714,8 +34714,6 @@ async function run() {
     const appKey = core.getInput('app_key');
     const appSecret = core.getInput('app_secret');
     const outputVariable = core.getInput('output_variable');
-    core.error(`appkey: ${appKey}`);
-    core.error(`appSecret: ${appSecret}`);
 
     core.info(`Server URL: ${serverUrl}`);
     core.info('Attempting authentication...');
